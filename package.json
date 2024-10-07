@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ustinskiydmitriy.github.io/construction-company",
+  "homepage": "https://ustinskiydmitriy.github.io/construction-company/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
