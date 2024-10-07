@@ -1,0 +1,18 @@
+.section {
+  display: flex;
+  margin-block-start: 200px;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  padding: 30px 50px;
+}
+
+.description {
+  display: flex;
+  gap: 30px;
+  font-size: 24px;
+  width: 28vw;
+  flex-wrap: wrap;
+  color: #fff;
+  text-align: start;
+}

@@ -1,0 +1,43 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: fit-content;
+  gap: 30px;
+  padding: 30px 20px;
+  background-color:  #37385888;
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+.contacts img {
+  width: 25px
+}
+
+.phone a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.email a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+ a {
+  text-decoration: none;
+  color: #c8c8ca;
+}
+
+.links {
+  display :flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}

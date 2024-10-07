@@ -1,0 +1,29 @@
+.header {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 50px 30px;
+  margin: 10px 10px 0 10px;
+  background-color: #343539;
+  border-radius: 30px;
+}
+
+.list {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+.list li {
+  color: #fff;
+}
+
+.list li:hover {
+  color: yellow;
+}
+
+.list a {
+  text-decoration: none;
+}
