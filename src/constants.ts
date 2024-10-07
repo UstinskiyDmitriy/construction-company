@@ -1,7 +1,7 @@
 export const cardData = [
   {
     id: 1,
-    img: "./src/public/image1.png",
+    img: "/image1.png",
     name: 'БарнХаус',
     karkasPrice: '6 200 000',
     monolitPrice: '9 450 000',
@@ -11,7 +11,7 @@ export const cardData = [
   },
   {
     id: 2,
-    img: "./src/public/image2.png",
+    img: "/image2.png",
     name: 'Гранд Мараис',
     karkasPrice: '11 550 000',
     monolitPrice: '14 370 000',
@@ -21,7 +21,7 @@ export const cardData = [
   },
   {
     id: 3,
-    img: "./src/public/image3.png",
+    img: "/image3.png",
     name: 'Фешрих',
     karkasPrice: '7 260 000',
     monolitPrice: '11 330 000',
@@ -31,7 +31,7 @@ export const cardData = [
   },
   {
     id: 4,
-    img: "./src/public/image4.png",
+    img: "/image4.png",
     name: 'Вуд Виледж',
     karkasPrice: '5 260 000',
     monolitPrice: '8 700 000',
