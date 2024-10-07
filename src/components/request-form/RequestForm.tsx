@@ -9,7 +9,7 @@ export default function RequestForm() {
         <FormContacts 
           formText={`Задайте нам интересующий вас вопрос - наши архитекторы ответят вам`}
           formTitle={'Мы готовы воплотить вашу идею в жизнь'}
-          imageUrl={'./src/public/helmet.png'} 
+          imageUrl={'/helmet.png'} 
           closeModal={() => console.log()}        
         />
       </div>
