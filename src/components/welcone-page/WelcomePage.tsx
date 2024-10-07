@@ -27,7 +27,7 @@ export default function WelcomePage() {
           <ReusableButton buttonText="Заказать звонок" onClick={openModal} width={100} />
         </div>
         <div>
-          <img src="../public/house.png" alt="house" />
+          <img src="../src/public/house.png" alt="house" />
         </div>
       </section>
 
