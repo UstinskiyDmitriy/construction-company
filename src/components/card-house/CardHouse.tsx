@@ -21,7 +21,6 @@ export default function CardHouse() {
           arrowSize: 50,
           arrowOffset: 10,
           dotWidth: 50,
-          
         }
       }
     }}
@@ -29,18 +28,18 @@ export default function CardHouse() {
 <div className={s.main_wrapper}>
       <header className={s.header}>
         <h2>Проект дома: {cardData[currentSlide].name}</h2>
-        <Button buttonText='Подробнее' width={20} onClick={() => {}} />
+        <Button buttonText='Подробнее' onClick={() => {}}/>
       </header>
       <main className={s.main}>
         <div className={s.carusel}>
           <Carousel
             arrows
             infinite
-            style={{ width: '30vw' }}
+            
             beforeChange={handleBeforeChange}
           >
             {cardData.map((item, index) => (
-              <div key={index}>
+              <div key={index} className={s.image_container}>
                 <img src={item.img} alt="" />
               </div>
             ))}

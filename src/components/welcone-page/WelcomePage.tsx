@@ -26,7 +26,7 @@ export default function WelcomePage() {
           </p>
           <ReusableButton buttonText="Заказать звонок" onClick={openModal} width={100} />
         </div>
-        <div>
+        <div className={s.image_container}>
           <img src="/house.png" alt="house" />
         </div>
       </section>

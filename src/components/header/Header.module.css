@@ -1,11 +1,11 @@
 .header {
   color: #fff;
-  font-size: 24px;
   font-weight: 500;
   padding: 50px 30px;
-  margin: 10px 10px 0 10px;
+  width: 100%;
   background-color: #343539;
   border-radius: 30px;
+  
 }
 
 .list {
@@ -20,10 +20,69 @@
   color: #fff;
 }
 
-.list li:hover {
+.list li a:hover {
   color: yellow;
 }
 
 .list a {
   text-decoration: none;
+}
+
+.mobileHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.menuButton {
+  background-color: #343539;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0 0 10px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.mobileMenu {
+  background-color: #343539c5;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+  transition: top 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.mobileMenu.open {
+  top: 50px; 
+}
+
+.mobileList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobileList li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #444;
+}
+
+.mobileList a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+}
+
+
+@media screen and (width < 1200px){
+  .list {
+    gap: 40px;
+  }
 }

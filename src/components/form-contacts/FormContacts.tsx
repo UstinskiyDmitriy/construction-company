@@ -61,7 +61,7 @@ export default function FormContacts({
   return (
     <div className={s.main}>
       <div>
-        <img src={`${imageUrl}`} alt="" />
+        <img src={`${imageUrl}`} alt="" style={{width: '100%'}}/>
       </div>
       <div className={s.form_wrapper}>
         <form action="submit" className={s.form} onSubmit={handleSubmit}>
@@ -88,7 +88,7 @@ export default function FormContacts({
             />
           </label>
           <label htmlFor="phone">
-            Введите номер телефона
+            Введите номер
             <input
               type="text"
               name="phone"

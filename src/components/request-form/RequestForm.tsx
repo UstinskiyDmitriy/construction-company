@@ -4,7 +4,6 @@ export default function RequestForm() {
 
   return (
     <div className={s.main}>
-     
       <div className={s.form_wrapper}>
         <FormContacts 
           formText={`Задайте нам интересующий вас вопрос - наши архитекторы ответят вам`}

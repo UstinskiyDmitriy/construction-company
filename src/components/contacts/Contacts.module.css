@@ -41,3 +41,10 @@
   justify-content: center;
   gap: 25px;
 }
+
+@media screen and (width < 970px) {
+    .contacts {
+      margin-block-start: 40px;
+      flex-direction: column;
+    }
+}

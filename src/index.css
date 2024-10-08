@@ -3,9 +3,12 @@
   padding:0;
   box-sizing: border-box;
   
+  overflow-x: hidden;
+  
 }
 
 body {
   background: linear-gradient(180.00deg, rgb(171, 176, 189),rgb(87, 106, 154),rgb(73, 83, 116),rgb(67, 80, 114),rgb(61, 73, 116) 100%);
-  position: relative;
+  font-size: clamp(0.8125rem, 0.6566rem + 0.6834vw, 1.75rem);
 }
+

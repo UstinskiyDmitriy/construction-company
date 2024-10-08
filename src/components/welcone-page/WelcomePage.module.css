@@ -16,3 +16,18 @@
   color: #fff;
   text-align: start;
 }
+
+@media screen and (width < 970px) {
+  .section {
+    flex-direction: column;
+    padding: 10px 20px
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .image_container img {
+    width: 100%;
+  }
+}

@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  
+  width: 100%;
 }
 
 .form input{
@@ -48,4 +48,29 @@
   font-size: 26px;
   margin-top: 10px;
   border-radius: 30px;
+}
+
+@media screen and (width  < 1200px) {
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form_wrapper  {
+    max-width: 360px;
+    padding: 0;
+  }
+
+  .form {
+    padding: 10px;
+  }
+
+  .form input {
+    width: 100%;
+  }
+
+  .form label {
+    flex-direction: column;
+  }
 }
