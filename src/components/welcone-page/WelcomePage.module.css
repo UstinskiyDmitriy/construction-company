@@ -20,7 +20,8 @@
 @media screen and (width < 970px) {
   .section {
     flex-direction: column;
-    padding: 10px 20px
+    padding: 10px 20px;
+    margin-block-start: 40px;
   }
 
   .description {

@@ -15,7 +15,6 @@ interface TFormContacts {
 export default function FormContacts({
   formTitle,
   formText,
-  imageUrl,
   closeModal,
 }: TFormContacts) {
   const dispatch = useDispatch<AppDispatch>();
@@ -61,7 +60,7 @@ export default function FormContacts({
   return (
     <div className={s.main}>
       <div>
-        <img src={`${imageUrl}`} alt="" style={{width: '100%'}}/>
+        
       </div>
       <div className={s.form_wrapper}>
         <form action="submit" className={s.form} onSubmit={handleSubmit}>

@@ -1,4 +1,3 @@
-// ModalComponent.js
 import React from 'react';
 import { Modal, ConfigProvider } from 'antd';
 
@@ -16,12 +15,13 @@ return (
       Modal: {
         paddingLG: 10,
         paddingMD: -1,   
-        borderRadiusLG: 30
+        borderRadiusLG: 30,
+        margin: 0,
       }
     }
   }}
 >
-<Modal visible={isOpen} onCancel={onClose} footer={null} width={600}>
+<Modal visible={isOpen} onCancel={onClose} footer={null}>
       {children}
     </Modal>
 </ConfigProvider>

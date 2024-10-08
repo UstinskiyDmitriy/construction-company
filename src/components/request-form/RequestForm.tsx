@@ -4,6 +4,7 @@ export default function RequestForm() {
 
   return (
     <div className={s.main}>
+      <img src={'./helmet.png'} alt="" />
       <div className={s.form_wrapper}>
         <FormContacts 
           formText={`Задайте нам интересующий вас вопрос - наши архитекторы ответят вам`}

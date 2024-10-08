@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import s from './Header.module.css';
 
 export default function Header() {
-  const isMobile = useMediaQuery({query: '(max-width: 970px)'});
+  const isMobile = useMediaQuery({ query: '(max-width: 970px)' });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -15,10 +16,31 @@ export default function Header() {
     "Строительство", "Услуги", "О нас"
   ];
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        isMenuOpen &&
+        menuButtonRef.current &&
+        !menuButtonRef.current.contains(event.target as Node)
+      ) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isMenuOpen]);
+
   if (isMobile) {
     return (
       <div className={s.mobileHeader}>
-        <button className={s.menuButton} onClick={toggleMenu}>
+        <button
+          ref={menuButtonRef}
+          className={s.menuButton}
+          onClick={toggleMenu}
+        >
           {isMenuOpen ? 'Закрыть' : 'Меню'}
         </button>
         <div className={`${s.mobileMenu} ${isMenuOpen ? s.open : ''}`}>
