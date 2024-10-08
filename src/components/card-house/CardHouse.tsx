@@ -47,17 +47,17 @@ export default function CardHouse() {
         </div>
         <div className={s.info}>
           <div>
-            <img src="../public/Size.svg" alt="" />
+            <img src="/Size.svg" alt="" />
             <p>Габариты</p>
             <span>{cardData[currentSlide].size}</span>
           </div>
           <div>
-            <img src="../public/Space.svg" alt="" style={{ padding: '0 15px' }} />
+            <img src="/Space.svg" alt="" style={{ padding: '0 15px' }} />
             <p>Площадь</p>
             <span>{cardData[currentSlide].space} м2</span>
           </div>
           <div>
-            <img src="../public/Comfort.svg" alt="" style={{ padding: '0 15px' }} />
+            <img src="/Comfort.svg" alt="" style={{ padding: '0 15px' }} />
             <p>Комфорт</p>
             <span>{cardData[currentSlide].comfort}</span>
           </div>
