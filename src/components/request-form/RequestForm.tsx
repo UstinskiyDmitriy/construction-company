@@ -10,7 +10,7 @@ export default function RequestForm() {
           formText={`Задайте нам интересующий вас вопрос - наши архитекторы ответят вам`}
           formTitle={'Мы готовы воплотить вашу идею в жизнь'}
           imageUrl={'/helmet.png'} 
-          closeModal={() => console.log()}        
+          closeModal={() => {}}        
         />
       </div>
     </div>

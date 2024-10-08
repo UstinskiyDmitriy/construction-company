@@ -76,7 +76,7 @@ export default function CardHouse() {
         <div style={{ borderRight: '1px solid gray', height: '50px',  }}></div>
         <div>
           <p>Сделано</p>
-          <img src="../public/Logo.svg" alt="" />
+          <img src="/Logo.svg" alt="" />
         </div>
       </footer>
     </div>

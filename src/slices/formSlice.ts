@@ -54,6 +54,7 @@ const formSlice = createSlice({
       state.email = '';
       state.phone = '';
       state.question = '';
+      state.isFormSubmitted = false
     },
   },
   extraReducers: (builder) => {
