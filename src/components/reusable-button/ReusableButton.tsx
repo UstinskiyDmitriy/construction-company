@@ -3,7 +3,7 @@ import s from './ReusableButton.module.css';
 interface ReusabletButton {
   buttonText: string;
   onClick: () => void;
-  width: number
+  width?: number
 }
 
 export default function ReusableButton({ buttonText, onClick, width }:ReusabletButton) {

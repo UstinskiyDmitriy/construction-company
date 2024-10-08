@@ -28,7 +28,7 @@ export default function CardHouse() {
 <div className={s.main_wrapper}>
       <header className={s.header}>
         <h2>Проект дома: {cardData[currentSlide].name}</h2>
-        <Button buttonText='Подробнее' onClick={() => {}}/>
+        <Button buttonText='Подробнее' onClick={()=> {}}/>
       </header>
       <main className={s.main}>
         <div className={s.carusel}>
