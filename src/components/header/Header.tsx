@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import s from './Header.module.css';
 
