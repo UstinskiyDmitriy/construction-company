@@ -1,13 +1,6 @@
-import { useMediaQuery } from 'react-responsive';
 import s from './Contacts.module.css'
 export default function Contacts() {
- const isMobile = useMediaQuery({query: '(width <  970px)'});
 
- if(isMobile) {
-  return (
-    <div></div>
-  )
-}
 
 return (
   <div className={s.contacts}>
