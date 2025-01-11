@@ -1,0 +1,139 @@
+.main_wrapper {
+ width: 90%;
+ background: rgba(60, 91, 176, 0.14);
+ border-radius: 30px;
+ margin-block-end: 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  background: rgba(22, 23, 26, 0.371);
+  color: #fff;
+  font-size: 24px;
+  border-radius: 30px 30px 0 0;
+  
+}
+
+.main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 30px;
+  column-gap: 50px;
+  background: rgba(69, 75, 102, 0.664);
+}
+
+.carusel img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  width:100%;
+  min-height: 250px;
+  gap: 30px;
+  color:#fff;
+}
+
+.info_block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  width:100%;
+}
+
+.info_block div {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 15px;
+  width: 15vw;
+}
+
+.border {
+  border-right: 1px solid gray;
+  height: 50px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: rgba(38, 42, 51, 0.76);
+  border-radius: 0 0 30px 30px;
+  font-size: 1.5rem;
+}
+
+.footer div{
+  display: flex;
+  align-items: center;
+  gap:20px;
+}
+
+@media screen and (width < 1100px) {
+
+.main_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
+
+.header {
+  font-size: 18px;
+}
+
+.header button {
+  font-size: 16px;
+}
+
+  .image_container {
+    display: flex;
+    align-items: center;
+  }
+
+  .image_container img {
+    width: 100%;
+    
+  } 
+
+  .main {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+  }
+
+  .info_block div {
+    width: 50vw;
+  }
+
+  .footer {
+    display: block;
+    padding: 10px 5px;
+  }
+
+  .footer_item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .price {
+    
+  }
+
+  .footer .border {
+    border: none;
+  }
+
+}

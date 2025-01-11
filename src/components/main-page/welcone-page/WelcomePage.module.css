@@ -1,0 +1,36 @@
+.section {
+  display: flex;
+  margin-block-start: 100px;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  padding: 30px 50px;
+  height: 100vh;
+}
+
+.description {
+  display: flex;
+  gap: 30px;
+  font-size: 24px;
+  width: 28vw;
+  flex-wrap: wrap;
+  color: #fff;
+  text-align: start;
+}
+
+@media screen and (width < 970px) {
+  .section {
+    flex-direction: column;
+    padding: 10px 20px;
+    margin-block-start: 40px;
+    height: 100%;
+  }
+
+  .description {
+    width: 100%;
+  }
+
+  .image_container img {
+    width: 100%;
+  }
+}
